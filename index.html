@@ -139,7 +139,8 @@
                         }
                         element[columns[j]] = data.values[i][j];
                         if (columns[j] == "word") {
-                            specialWords = specialWords.concat(element);
+                            console.log(element);
+                            specialWords.push(element);
                         }
                     }
                 }
