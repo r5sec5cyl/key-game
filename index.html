@@ -138,9 +138,10 @@
                             continue;
                         }
                         element[columns[j]] = data.values[i][j];
+                        const newElement = new Map(element);
                         if (columns[j] == "word") {
-                            console.log(element);
-                            specialWords.push(element);
+                            console.log(newElement);
+                            specialWords.push(newElement);
                         }
                     }
                 }
