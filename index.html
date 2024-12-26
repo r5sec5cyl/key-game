@@ -114,7 +114,45 @@
                     console.log(error)
                 });
         }
+
         loadDictionary("https://r5sec5cyl.github.io/key-game/dictionary.json");
+        
+        sheetsApiKey = "AIzaSyCeDfk2YTrhsd8EvBUpC1MwtRNoZ0vu9xQ";
+        
+        function loadSheet(sheetUrl, sheetName) {
+            sheetId = sheetUrl.split("/d/")[1].split("/")[0];
+            apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${sheetName}?key=${sheetsApiKey}`;
+            fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                columns = data.values[0]
+                console.log(columns);
+                for (let i in data.values) {
+                    if (i == 0) {
+                        continue
+                    }
+                    element = {};
+                    for (let j in data.values[i]) {
+                        if (data.values[i][j] == "") {
+                            continue;
+                        }
+                        element[columns[j]] = data.values[i][j];
+                        if (columns[j] == "word") {
+                            specialWords = specialWords.concat(element);
+                        }
+                    }
+                }
+            })
+            .catch((error) => {
+                console.log(error)
+            });
+        }
+        
+        sheetName = "Sheet1"
+        sheetsUrl="https://docs.google.com/spreadsheets/d/1U-LMt1c69fsjqt2mVwACwKlga32GW4OJkXqSzT_B21A/edit?gid=0#gid=0"
+        loadSheet(sheetUrl, sheetName);
+
     </script>
   </body>
 </html>
