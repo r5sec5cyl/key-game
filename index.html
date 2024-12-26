@@ -101,180 +101,20 @@
             return null;
         }
 
-        specialWords = [
-            {
-                "word": "anya",
-                "image": "https://www.ukbabynames.com/images/names/girls/Anya.jpg"
-            },
-            {
-                "word": "rose",
-                "image": "https://e0.pxfuel.com/wallpapers/70/999/desktop-wallpaper-rose-pink-lines-background-with-names-rose-name-female-names-rose-greeting-card-line-art-with-rose-name.jpg"
-            },
-            {
-                "word": "maman",
-                "image": "https://pbs.twimg.com/profile_images/1318662076643102720/t_j7vEGQ_400x400.jpg"
-            },
-            {
-                "word": "daddy",
-                "image": "https://media.licdn.com/dms/image/D4E03AQHBUOBIAh5SHA/profile-displayphoto-shrink_800_800/0/1714527559694?e=1720656000&v=beta&t=PmHkLImfFxekSWvOuz-oKPG0sQiv81QYGxdqpa1ejE0"
-            },
-            {
-                "word": "bee",
-                "image": "https://img.freepik.com/free-vector/cute-bee-flying-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector_138676-6016.jpg"
-            },
-            {
-                "word": "abeille",
-                "image": "https://img.freepik.com/free-vector/cute-bee-flying-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector_138676-6016.jpg"
-            },
-            {
-                "word": "dog",
-                "image": "https://cdn.openart.ai/published/J3EawFUz9J5vWkZf2X2H/VKb-2NfY_e2Zb_256.webp"
-            },
-            {
-                "word": "chien",
-                "image": "https://cdn.openart.ai/published/J3EawFUz9J5vWkZf2X2H/VKb-2NfY_e2Zb_256.webp"
-            },
-            {
-                "word": "cat",
-                "image": "https://img.freepik.com/free-photo/front-view-kitten-outdoors_1161-75.jpg?size=338&ext=jpg&ga=GA1.1.735520172.1711411200&semt=ais"
-            },
-            {
-                "word": "chat",
-                "image": "https://img.freepik.com/free-photo/front-view-kitten-outdoors_1161-75.jpg?size=338&ext=jpg&ga=GA1.1.735520172.1711411200&semt=ais"
-            },
-            {
-                "word": "bird",
-                "image": "https://www.allaboutbirds.org/news/wp-content/uploads/2020/07/STanager-Shapiro-ML.jpg"
-            },
-            {
-                "word": "oiseau",
-                "image": "https://www.allaboutbirds.org/news/wp-content/uploads/2020/07/STanager-Shapiro-ML.jpg"
-            },
-            {
-                "word": "koala",
-                "image": "https://www.dailynews.com/wp-content/uploads/2023/05/LDN-L-KOALA-0504-crop-02.jpg?w=640"
-            },
-            {
-                "word": "horse",
-                "image": "https://ka-hi.com/wp-content/uploads/sites/2/2016/09/horse-digestive-problems.jpg"
-            },
-            {
-                "word": "cheval",
-                "image": "https://ka-hi.com/wp-content/uploads/sites/2/2016/09/horse-digestive-problems.jpg"
-            },
-            {
-                "word": "cow",
-                "image": "https://media.tatler.com/photos/6141d822ba7e3beacb745c02/4:3/w_1920,h_1440,c_limit/Cow-Beauty-HP-tatler-6oct17-rex_b.jpg"
-            },
-            {
-                "word": "vache",
-                "image": "https://media.tatler.com/photos/6141d822ba7e3beacb745c02/4:3/w_1920,h_1440,c_limit/Cow-Beauty-HP-tatler-6oct17-rex_b.jpg"
-            },
-            {
-                "word": "monkey",
-                "image": "https://facts.net/wp-content/uploads/2023/12/15-baby-monkey-facts-1702697694.jpg"
-            },
-            {
-                "word": "singe",
-                "image": "https://facts.net/wp-content/uploads/2023/12/15-baby-monkey-facts-1702697694.jpg"
-            },
-            {
-                "word": "baby",
-                "image": "https://www.nct.org.uk/sites/default/files/styles/article_image_lg/public/2018-12/happy%20baby%20everyday%20care.jpg?h=3cd9b79a&itok=-tggF4pG"
-            },
-            {
-                "word": "bebe",
-                "image": "https://www.nct.org.uk/sites/default/files/styles/article_image_lg/public/2018-12/happy%20baby%20everyday%20care.jpg?h=3cd9b79a&itok=-tggF4pG"
-            },
-            {
-                "word": "fish",
-                "image": "https://c02.purpledshub.com/uploads/sites/62/2022/09/GettyImages-200386624-001-d80a3ec.jpg"
-            },
-            {
-                "word": "poisson",
-                "image": "https://c02.purpledshub.com/uploads/sites/62/2022/09/GettyImages-200386624-001-d80a3ec.jpg"
-            },
-            {
-                "word": "whale",
-                "image": "https://cdn.britannica.com/37/75637-050-B425E8F1/Killer-whale.jpg"
-            },
-            {
-                "word": "baleine",
-                "image": "https://cdn.britannica.com/37/75637-050-B425E8F1/Killer-whale.jpg"
-            },
-            {
-                "word": "naniji",
-                "image": "https://voyagephoenix.com/wp-content/uploads/sites/5/2018/12/personal_photo-92-1000x600.jpg"
-            },
-            {
-                "word": "nisji",
-                "image": "https://webapp4.asu.edu/photo-ws/directory_photo/icdhi?size=large&break=1725991532&blankImage2=1"
-            },
-            {
-                "word": "blue",
-                "color": "blue"
-            },
-            {
-                "word": "bleu",
-                "color": "blue"
-            },
-            {
-                "word": "red",
-                "color": "red"
-            },
-            {
-                "word": "rouge",
-                "color": "red"
-            },
-            {
-                "word": "green",
-                "color": "green"
-            },
-            {
-                "word": "vert",
-                "color": "green"
-            },
-            {
-                "word": "yellow",
-                "color": "#ffcd01"
-            },
-            {
-                "word": "jaune",
-                "color": "#ffcd01"
-            },
-            {
-                "word": "pink",
-                "color": "#ff01d6"
-            },
-            {
-                "word": "orange",
-                "color": "orange"
-            },
-            {
-                "word": "purple",
-                "color": "purple"
-            },
-            {
-                "word": "mauve",
-                "color": "purple"
-            },
-            {
-                "word": "black",
-                "color": "black"
-            },
-            {
-                "word": "noir",
-                "color": "black"
-            },
-            {
-                "word": "brown",
-                "color": "brown"
-            },
-            {
-                "word": "marron",
-                "color": "brown"
-            }
-        ]
+        specialWords = []
+
+        function loadDictionary(url) {
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    specialWords = specialWords.concat(data)
+                })
+                .catch((error) => {
+                    console.log(error)
+                });
+        }
+        loadDictionary("https://r5sec5cyl.github.io/key-game/dictionary.json");
     </script>
   </body>
 </html>
