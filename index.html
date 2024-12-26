@@ -138,7 +138,7 @@
                             continue;
                         }
                         element[columns[j]] = data.values[i][j];
-                        const newElement = new Object(element);
+                        const newElement = { ...element };
                         if (columns[j] == "word") {
                             console.log(newElement);
                             specialWords.push(newElement);
