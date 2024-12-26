@@ -40,6 +40,22 @@
         "image": "https://img.freepik.com/free-photo/front-view-kitten-outdoors_1161-75.jpg?size=338&ext=jpg&ga=GA1.1.735520172.1711411200&semt=ais"
     },
     {
+        "word": "sheep",
+        "image": "https://images.unsplash.com/photo-1533415648777-407b626eb0fa?q=80&w=468"
+    },
+    {
+        "word": "mouton",
+        "image": "https://images.unsplash.com/photo-1533415648777-407b626eb0fa?q=80&w=468"
+    },
+    {
+        "word": "goat",
+        "image": "https://images.unsplash.com/photo-1646378201390-e11b6ad7b2e9?q=80&w=937"
+    },
+    {
+        "word": "chevre",
+        "image": "https://images.unsplash.com/photo-1646378201390-e11b6ad7b2e9?q=80&w=937"
+    },
+    {
         "word": "bird",
         "image": "https://www.allaboutbirds.org/news/wp-content/uploads/2020/07/STanager-Shapiro-ML.jpg"
     },
@@ -85,11 +101,11 @@
     },
     {
         "word": "shark",
-        "image": "https://www.scuba.com/blog/wp-content/uploads/2015/12/blue-shark-shutterstock_1818438695-1024x576.jpg"
+        "image": "https://images.unsplash.com/photo-1560275619-4662e36fa65c?q=80&w=800&auto=format&fit=crop"
     },
     {
         "word": "requin",
-        "image": "https://www.scuba.com/blog/wp-content/uploads/2015/12/blue-shark-shutterstock_1818438695-1024x576.jpg"
+        "image": "https://images.unsplash.com/photo-1560275619-4662e36fa65c?q=80&w=800&auto=format&fit=crop"
     },
     {
         "word": "fish",
